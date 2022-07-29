@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-body text-primary;
+  }
+  .section {
+    @apply py-24;
+  }
+  .form-control {
+    @apply h-54 w-full pl-4 rounded-sm outline-none font-body text-sm text-gray focus:ring-1 focus:ring-primary;
+  }
+  .btn {
+    @apply h-54 font-body font-semibold text-sm tracking-wide rounded-sm w-full flex items-center justify-center uppercase text-white;
+  }
+  .textarea {
+    @apply w-full pl-4 pt-4 rounded-sm outline-none font-body text-sm text-gray focus:ring-1 focus:ring-primary min-h-[126px] resize-none;
+  }
+  .active {
+    @apply text-accent-hover;
+  }
+}
