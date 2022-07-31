@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
 // import icons
-import BarsIcon from "../assets/img/bars.png";
-import CloseIcon from "../assets/img/close.png";
+import BarsIcon from "../assets/image/bars.png"
+import CloseIcon from "../assets/image/close.png"
 
 // import navigation data
 import { navigation } from "../data";
@@ -29,7 +29,7 @@ const NavMobile = () => {
         {/* Close Button */}
         <button
           onClick={() => setIsOpen(false)}
-          className="absolute top-6 left-6"
+          className="absolute top-8 right-10"
         >
           <img src={CloseIcon} alt="" />
         </button>
@@ -42,7 +42,7 @@ const NavMobile = () => {
                 activeClass="active"
                 spy={true}
                 offset={-200}
-                className="cursor-pointer"
+                className="hover:text-accent-hover transition-all duration-300 cursor-pointer"
               >
                 {item.name}
               </Link>

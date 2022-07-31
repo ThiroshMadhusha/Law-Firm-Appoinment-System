@@ -5,14 +5,14 @@ import Nav from "./Nav";
 import NavMobile from "./NavMobile";
 
 // import logo
-import Logo from "../assets/img/logo.png";
+import Logo from "../assets/image/logo.png"
 
 const Header = () => {
   const [bg, setBg] = useState(false);
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      if (window.scrolly > 80) {
+      if (window.scrollY > 80) {
         setBg(true);
       } else {
         setBg(false);

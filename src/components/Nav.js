@@ -1,6 +1,6 @@
 import React from "react";
 
-// import navigation data
+// import navigation data(Header Nav Bar)
 import { navigation } from "../data";
 
 // import links
@@ -8,8 +8,8 @@ import { Link } from "react-scroll";
 
 const Nav = () => {
   return (
-    <nav className="lg:flex space-x-6 font-body font-semibold text-sm text-primary">
-      <ul className="gb-pink-200">
+    <nav className="hidden lg:flex">
+      <ul className="lg:flex space-x-6 font-body font-semibold text-sm text-primary">
         {navigation.map((item, index) => {
           return (
             <li key={index}>
